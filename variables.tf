@@ -1,5 +1,6 @@
 variable "aws_region" {
-  type = string
+  type    = string
+  default = "us-east-1"
 }
 
 variable "aws_profile" {
@@ -11,6 +12,3 @@ variable "instance_type" {
   type = string
 }
 
-variable "instance_tags" {
-  type = map(any)
-}
