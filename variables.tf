@@ -1,18 +1,16 @@
 variable "aws_region" {
+  type = string
+}
+
+variable "aws_profile" {
   type    = string
-  default = "us-east-1"
+  default = "default"
 }
 
 variable "instance_type" {
-  type    = string
-  default = "t2.micro"
+  type = string
 }
 
 variable "instance_tags" {
   type = map(any)
-  default = {
-    Name      = "Instance-TerraformCourse"
-    Project   = "Course"
-    Managedby = "Terraform"
-  }
 }
